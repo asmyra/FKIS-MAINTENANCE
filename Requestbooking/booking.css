@@ -1,0 +1,64 @@
+.header {
+    text-align: center;
+    font-size: 5vh;
+    background-color: maroon;
+    color: white;
+    padding: 2.5vh;
+    margin-bottom: 3vh;
+
+}
+h2{
+  background-color:#ffcccc ;
+  padding: 10px 30px;
+  width: auto;
+
+}
+.detail{
+    border: solid maroon;
+    padding: 50px;
+    border-radius: 12px;
+}
+table {
+    width: 100%;
+}
+ 
+
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 5px;
+  width: 180px;
+  float: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button{
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: maroon;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
