@@ -15,8 +15,8 @@
 <nav><?php include '../styles/sidebaradmin.php'?>FK Inventory System</nav>
     <h1><b>Booking List</b></h1>
 <center>
-	<h3><b>Click to see <a href="ApprovedBookingInterface.php"> approved</a>
- or <a href="RejectedBookingInterface.php">rejected</a>
+	<h3><b>Click to see <a href="ApprovedBookingInterface(new).php"> approved</a>
+ or <a href="RejectedBookingInterface(new).php">rejected</a>
  booking.</b></h3>
     <form name ="goodsform" action="" method="post"> 
       <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
@@ -56,8 +56,8 @@
           <td></td>
           <td></td>
 		  <script type="text/javascript" src="updatedelete.js"></script>
-          <td><input type="button" name="update" value="Approve" onClick="updateGood();"></td>
-          <td><input type="button" name="delete" value="Reject"  onClick="deleteGood();"></td>
+          <td><input type="submit" name="approve" value="Approve" onClick="updateGood();"></td>
+          <td><input type="submit" name="reject" value="Reject"  onClick="deleteGood();"></td>
           </tr>
           
           

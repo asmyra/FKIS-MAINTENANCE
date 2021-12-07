@@ -8,3 +8,10 @@ document.goodsform.action = "RejectController.php";
 document.goodsform.submit();
 }
 }
+function deleteBooking() {
+    if(confirm("Confirm to delete?")) {
+    document.goodsform.action = "DeleteController.php";
+    document.goodsform.submit();
+    }
+    }
+    
