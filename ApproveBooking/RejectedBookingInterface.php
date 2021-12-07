@@ -26,6 +26,7 @@
                 <th colspan="5">Booking ID</th>
 				<th colspan="5">Staff ID</th>
 				<th colspan="5">Status</th>
+                <th colspan="5">Note</th>
             </thead>
             <tbody>
                 <?php
@@ -37,6 +38,7 @@
                         <td colspan="5"><?php echo $row['Booking_ID']?></td>
 						<td colspan="5"><?php echo $row['Staff_ID']?></td>
 						<td colspan="5"><?php echo $row['Booking_Status']?></td>
+                        <td colspan="5"><?php echo $row['Note']?></td>
 						
                 <?php
 				$i++;
