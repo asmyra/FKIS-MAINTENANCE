@@ -17,14 +17,14 @@
 <section>
   <b>
     <ul>
-      <a href="#"><img src ="images/fk.jpg"/><br>
+      <a href="#"><img src ="images/staff.png"/><br>
     </ul>
 </b>
   
   <article>
     <h1> <br>
 
-      <div id="content">Welcome Home Staff <?php
+      <div id="content">Welcome Home Staff ST990507 <?php
     if(isset($_SESSION['name'])){
         echo $_SESSION['name'];
     }
@@ -32,7 +32,9 @@
   
 <p>
 This system is for the use for Faculty of Computing staff to manage the inventory of the faculty.<br>
-This is the first version of FKIS System.<br><br><br><br><br><br>
+=====================================<br><br><br><br><br><br>
+Staff Email: nlsyahirah99@gmail.com.<br>
+This edited first version of FKIS System.<br><br><br><br><br><br>
 <div  class="date" id="currDateTime"> </div>
 </div>
 </p>
