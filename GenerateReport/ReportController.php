@@ -4,13 +4,15 @@
 	mysqli_select_db($link, "fkisdb") or die(mysqli_error());
     
     $Report_ID = $_POST['Report_ID'];
+    $Report_Name = $_POST['Report_Name'];
+    $R_Desc = $_POST['R_Desc'];
     $Report_Date = $_POST['Report_Date'];
     $Audit_ID = $_POST['Audit_ID'];
     $Order_ID = $_POST['Order_ID'];
 
 
 
-    $query = "insert into `report` values('$Report_ID', '$Report_Date', '$Audit_ID' , '$Order_ID')" or die(mysqli_error());
+    $query = "insert into `report` values('$Report_ID', '$Report_Name', '$R_Desc', '$Report_Date', '$Audit_ID' , '$Order_ID')" or die(mysqli_error());
     $result = mysqli_query($link, $query);
 
 ?>
@@ -34,6 +36,14 @@
                 <tr>
                     <td><label for="Report_ID">Report ID:</label></td>
                     <td colspan="5"><?php echo $Report_ID ?></td>
+                </tr>
+                <tr>
+                    <td><label for="Report_Name">Report Name:</label></td>
+                    <td colspan="5"><?php echo $Report_Name ?></td>
+                </tr>
+                <tr>
+                    <td><label for="R_Desc">Report Description:</label></td>
+                    <td colspan="5"><?php echo $R_Desc?></td>
                 </tr>
                 <tr>
                     <td><label for="Report_Date">Report Date:</label></td>

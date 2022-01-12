@@ -18,6 +18,14 @@
                         <td><label for="Report_ID">Report ID:</label></td>
                         <td colspan="5"><input type="text" name="Report_ID" required/></td>
                     </tr>
+                     <tr>
+                        <td><label for="Report_Name">Report Name:</label></td>
+                        <td colspan="5"><input type="text" name="Report_Name" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="R_Desc">Report Description:</label></td>
+                        <td colspan="5"><textarea name="R_Desc" rows="10" cols="30"></textarea></td>
+                    </tr>
                     <tr>
                         <td><label for="Report_Date">Report Date:</label></td>
                         <td colspan="5"><input type="date" name="Report_Date" required/></td>
@@ -40,4 +48,3 @@
         </div>
     </center>
 </body>
-</html>
