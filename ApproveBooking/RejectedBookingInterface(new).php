@@ -23,10 +23,10 @@
     <form name ="goodsform" action="" method="post"> 
       <table style="border: 3px solid maroon;margin:10px;padding:50px; width:60%;">
       <tr>
-          <th colspan="5">Booking ID</th>
-		  <th colspan="5">Staff ID</th>
-		  <th colspan="5">Status</th>
-          <th colspan="5">Note</th>
+      <th colspan="4">Booking ID</th>
+		  <th colspan="4">Staff ID</th>
+		  <th colspan="4">Status</th>
+          <th colspan="4">Note</th>
         </tr>
         
     <?php
@@ -38,27 +38,24 @@
              $classname="oddRow";
     ?>
          <tr class="<?php if(isset($classname)) echo $classname;?>">
-          <td><input type="checkbox" name="booking[]" value="<?php echo $row["Booking_ID"]; ?>" ><?php echo $row["Booking_ID"];?></td>
-          <td colspan="5"><?php echo $row['Booking_ID']?></td>
-		  <td colspan="5"><?php echo $row['Staff_ID']?></td>
-		  <td colspan="5"><?php echo $row['Booking_Status']?></td>
-          <td colspan="5"><?php echo $row['Note']?></td>
+          <td colspan="4"><input type="checkbox" name="booking[]" value="<?php echo $row["Booking_ID"]; ?>" ><?php echo $row["Booking_ID"];?></td>
+		  <td colspan="4"><?php echo $row['Staff_ID']?></td>
+		  <td colspan="4"><?php echo $row['Booking_Status']?></td>
+          <td colspan="4"><?php echo $row['Note']?></td>
         </tr>
     <?php
         $i++;
         }
     ?>
           <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td colspan="4"></td>
+          <td colspan="4"></td>
+          <td colspan="4"></td>
+          <td colspan="4"></td>
 		  <script type="text/javascript" src="updatedelete.js"></script>
           <td><input type="submit" name="approve" value="Approve" onClick="updateGood();"></td>
           <td><input type="submit" name="delete" value="Delete"  onClick="deleteBooking();"></td>
           </tr>
-          
           
         </table>
         </form> 
