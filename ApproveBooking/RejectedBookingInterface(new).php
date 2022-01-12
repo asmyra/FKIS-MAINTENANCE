@@ -1,6 +1,11 @@
 <?php
-	 require_once "connect.php";
-     $result = mysqli_query($conn, "SELECT * FROM booking WHERE Booking_Status='Rejected'");
+	 $link = mysqli_connect("localhost", "root", "") or die(mysqli_connect_error());
+     mysqli_select_db($link, "fkisdb") or die(mysqli_error($link));
+     $sql = "SELECT * FROM booking WHERE Booking_Status='Rejected'";
+     
+     $result = mysqli_query($link, $sql) or die(mysqli_error($link));
+     
+  mysqli_close($link);
 	?>
 <!DOCTYPE html>	
 <html lang="en">
