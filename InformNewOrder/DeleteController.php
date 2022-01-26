@@ -50,4 +50,4 @@ if($query_run)
  
 mysqli_close($link);
 ?>
-<br><button onclick="location.href='ModelOrder.php'">View Latest List</button><br>
+<br>button onclick="location.href='view.php'">Add Order</button><button onclick="location.href='ModelOrder.php'">View Latest List</button><br>
