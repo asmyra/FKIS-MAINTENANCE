@@ -24,6 +24,7 @@
                 <th colspan="5">Admin ID</th>
                 <th colspan="5">Item Code</th>
                 <th colspan="5">Item Quantity</th>
+				<th colspan="5">Order Time</th>
             </thead>
             <tbody>
                 <?php
@@ -35,13 +36,14 @@
                         <td colspan="5"><?php echo $row['Admin_ID']?></td>
                         <td colspan="5"><?php echo $row['Item_Code']?></td>
                         <td colspan="5"><?php echo $row['Item_Quantity']?></td>
+						<td colspan="5"><?php echo $row['Order_time']?></td>
                     </tr>
                 <?php
                     }
                 ?>
             </tbody>
-        </table>
-        <br>
+        </table><br>
+        <br><button onclick="location.href='DeleteController.php'">Delete Order</button><button onclick="location.href='view.php'">Back</button><br><br>
     </center>
 </body>
 </html>
