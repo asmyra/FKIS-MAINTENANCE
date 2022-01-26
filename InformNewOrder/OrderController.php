@@ -7,8 +7,9 @@
     $Admin_ID = $_POST['Admin_ID'];
     $Item_Code = $_POST['Item_Code'];
     $Item_Quantity = $_POST['Item_Quantity'];
+	$Order_time = $_POST['Order_time'];
 
-    $query = "insert into `new_order` values('$Order_ID', '$Admin_ID', '$Item_Code', '$Item_Quantity')" or die(mysqli_error());
+    $query = "insert into `new_order` values('$Order_ID', '$Admin_ID', '$Item_Code', '$Item_Quantity',  '$Order_time')" or die(mysqli_error());
     $result = mysqli_query($link, $query);
 
 ?>
@@ -44,6 +45,10 @@
                 <tr>
                     <td><label for="Item_Quantity">Item Quantity:</label></td>
                     <td colspan="5"><?php echo $Item_Quantity ?></td>
+                </tr>
+				 <tr>
+                    <td><label for="Order_time">Order Time:</label></td>
+                    <td colspan="5"><?php echo $Order_time ?></td>
                 </tr>
  
             </table><br>
