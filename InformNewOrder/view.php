@@ -30,9 +30,13 @@
                         <td><label for="Item_Quantity">Item Quantity:</label></td>
                         <td colspan="5"><input type="text" name="Item_Quantity"/></td>
                     </tr>
+					 <tr>
+                        <td><label for="Item_Quantity">Order Time:</label></td>
+                        <td colspan="5"><input type="text" name="Order_time"/></td>
+                    </tr>
                    <tr>
                         <td>
-                            <br><input type="submit">
+                            <br><br><button onclick="location.href='view.php'">Submit</button>
                         </td>
                     </tr>
                 </table>
@@ -41,3 +45,20 @@
     </center>
 </body>
 </html>
+<?php
+	$link = mysqli_connect("localhost", "root", "") or die(mysqli_connect_error());
+
+	mysqli_select_db($link, "fkisdb") or die(mysqli_error());
+    
+
+
+    
+    
+
+?>
+
+
+
+              
+           
+        
